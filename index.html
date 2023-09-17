@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B8A3-FRUIT BRUST</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <!-- dasy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Color -->
+  <script src="tailwind.config.js"></script>
+  <script src="assets/js/countdown.js"></script>
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- row css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Heading area -->
+    <header class="heading_sec pt-8">
+        <!-- nav bar -->
+        <div class="navbar lg:bg-color_primery xl:bg-color_primery container mx-auto rounded-full px-8 items-center py-4">
+          <div class="navbar-start">
+            <div class=" lg:hidden">
+              <a class="p-0"><img class="w-full" src="assets/img/logo black.png" alt=""></a>
+            </div>
+            <ul class="menu menu-horizontal px-1 hidden lg:flex text-white lg:text-sm xl:text-lg">
+              <li><a>Home</a></li>
+              <li><a>About Us</a></li>
+              <li><a>Shop</a></li>
+              <li><a>All Fruits</a></li>
+            </ul>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <a class="btn btn-ghost normal-case text-xl"><img class="w-3/4" src="assets/img/logo white.png" alt=""></a>
+          </div>
+          
+          <div class="navbar-end lg:hidden">
+            <div class="dropdown dropdown-end">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Item 1</a></li>
+                <li>
+                  <a>Parent</a>
+                  <ul class="p-2">
+                    <li><a>Submenu 1</a></li>
+                    <li><a>Submenu 2</a></li>
+                  </ul>
+                </li>
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="navbar-end hidden lg:flex">
+            <div class="form-control">
+              <div class="flex items-center flex-row border rounded-full px-5 bg-white">
+                <input type="text" placeholder="Search" class="input w-24 md:w-auto focus:outline-none" />
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- hero slider -->
+        <div class="hero_section pt-8 container mx-auto">
+          <div class="carousel w-full ">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="assets/img/banner1.png" class="w-full" />
+              <div class="hero absolute transform -translate-y-1/2 top-1/2 z-10  bg-[linear-gradient(#121212,#12121200)] h-full w-full">
+                <div class="hero-content text-center">
+                  <div class="max-w-xl">
+                    <h1 class="xl:text-7xl lg:text-5xl md:text-3xl text-xl font-extrabold text-white">Unleash the fruitiness</h1>
+                    <p class="py-6 text-white text-xl">If you get hungry mid-day, a banana is your best snack</p>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-color_primery text-white border-0 hover:text-[#121212]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide3" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="assets/img/banner3.png" class="w-full" />
+              <div class="hero absolute transform -translate-y-1/2 top-1/2 z-10  bg-[linear-gradient(#121212,#12121200)] h-full w-full">
+                <div class="hero-content text-center">
+                  <div class="max-w-lg">
+                    <h1 class="xl:text-7xl lg:text-5xl md:text-3xl text-xl font-extrabold text-white">The best sweet candies.</h1>
+                    <p class="py-6 text-white text-xl">Empowering you through your snacks.</p>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-color_primery text-white border-0 hover:text-[#121212]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide1" class="btn btn-circle">❮</a> 
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide3" class="carousel-item relative w-full">
+              <img src="assets/img/banner3.png" class="w-full" />
+              <div class="hero absolute transform -translate-y-1/2 top-1/2 z-10  bg-[linear-gradient(#121212,#12121200)] h-full w-full">
+                <div class="hero-content text-center">
+                  <div class="max-w-lg">
+                    <h1 class="xl:text-7xl lg:text-5xl md:text-3xl text-xl font-extrabold text-white">Fruity candies for the ladies.</h1>
+                    <p class="py-6 text-white lg:text-xl text-md">Time flies like an arrow – but fruit flies like a banana..</p>
+                    <button class="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg bg-color_primery text-white border-0 hover:text-[#121212]">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="absolute z-10 flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide2" class="btn btn-circle">❮</a> 
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>  
+            </div> 
+          </div>
+        </div>
+        <!-- images Card -->
+        <div class="card_container mx-auto container mt-[-95px] hidden lg:flex">
+          <div class="image_card flex justify-center bg-white w-4/5 mx-auto z-30 z-10 relative bg-white rounded-lg shadow-2xl items-end text-xl">
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="assets/img/fruit1.png" alt="Shoes" class="w-3/4" />
+              </figure>
+              <div class="card-body pt-0 items-center text-center">
+                <h2 class="card-title">Strawberry</h2>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="assets/img/fruit2.png" alt="Shoes" class="w-3/4" />
+              </figure>
+              <div class="card-body pt-0 items-center text-center">
+                <h2 class="card-title">Orange</h2>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="assets/img/fruit3.png" alt="Shoes" class="w-3/4" />
+              </figure>
+              <div class="card-body pt-0 items-center text-center">
+                <h2 class="card-title">Mango</h2>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="assets/img/fruit4.png" alt="Shoes" class="w-3/4" />
+              </figure>
+              <div class="card-body pt-0 items-center text-center">
+                <h2 class="card-title">Strawberry</h2>
+              </div>
+            </div>
+            <div class="card">
+              <figure class="px-10 pt-10">
+                <img src="assets/img/fruit5.png" alt="Shoes" class="w-3/4" />
+              </figure>
+              <div class="card-body pt-0 items-center text-center">
+                <h2 class="card-title">Mango!</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+    
+    <main>
+      <!-- shop section -->
+      <section class="shop_section mt-36 px-5">
+          <div class="flex container justify-between mx-auto lg:flex-row md:flex-row sm:flex-col flex-col">
+            <div class="shop_heading md:w-5/12 w-full">
+              <h2 class="text-5xl font-extrabold">Deal of the day</h2>
+              <p class="text-base pt-4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="grid grid-flow-col gap-5 text-center auto-cols-max pt-5 font-extrabold">
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:15;"></span>
+                </span>
+                days
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:10;"></span>
+                </span>
+                hours
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span style="--value:24;"></span>
+                </span>
+                min
+              </div> 
+              <div class="flex flex-col">
+                <span class="countdown font-mono text-5xl">
+                  <span id="counterElement" style="--value:23;"></span>
+                </span>
+                sec
+              </div>
+            </div>
+          </div>
+      </section>
+
+      <!-- Grid Section - Starts Here  -->
+      <section class="container mx-auto grid grid-cols-1 lg:grid-cols-4 md:grid-cols-1 justify-items-center justify-center gap-x-8 mt-10 mb-36  lg:p-0 sm:px-5 p-5">
+
+        <div class="w-full bg-white border border-slate-200 rounded-xl duration-500 hover:scale-105 hover:shadow-xl my-4">
+          <a href="#">
+            <img src="assets/img/fruit6.png" alt="Product" class="w-2/5 mx-auto py-6" />
+            <div class="flex items-center justify-center ">
+              <p class="text-2xl text-black font-extrabold cursor-auto my-3">$149 - </p>
+              <del>
+                <p class="text-2xl text-gray-600 cursor-auto ml-2">$199</p>
+              </del>
+            </div>
+            <div class="divider w-4/5 mx-auto"></div>
+            <div class="product_name flex justify-center">
+              <p class="text-base text-gray-400">Apples</p>
+            </div>
+            <div class="reating flex justify-center py-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>                
+            </div>
+            <div class="flex justify-center pb-10">
+              <p class="text-lg font-extrabold text-color_primery">Details</p>
+            </div>
+          </a>
+        </div>
+        
+        <div class="w-full bg-white border border-slate-200 rounded-xl duration-500 hover:scale-105 hover:shadow-xl my-4">
+          <a href="#">
+            <img src="assets/img/fruit6.png" alt="Product" class="w-2/5 mx-auto py-6" />
+            <div class="flex items-center justify-center ">
+              <p class="text-2xl text-black font-extrabold cursor-auto my-3">$149 - </p>
+              <del>
+                <p class="text-2xl text-gray-600 cursor-auto ml-2">$199</p>
+              </del>
+            </div>
+            <div class="divider w-4/5 mx-auto"></div>
+            <div class="product_name flex justify-center">
+              <p class="text-base text-gray-400">Orange</p>
+            </div>
+            <div class="reating flex justify-center py-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>                
+            </div>
+            <div class="flex justify-center pb-10">
+              <p class="text-lg font-extrabold text-color_primery">Details</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full bg-white border border-slate-200 rounded-xl duration-500 hover:scale-105 hover:shadow-xl my-4">
+          <a href="#">
+            <img src="assets/img/fruit6.png" alt="Product" class="w-2/5 mx-auto py-6" />
+            <div class="flex items-center justify-center ">
+              <p class="text-2xl text-black font-extrabold cursor-auto my-3">$149 - </p>
+              <del>
+                <p class="text-2xl text-gray-600 cursor-auto ml-2">$199</p>
+              </del>
+            </div>
+            <div class="divider w-4/5 mx-auto"></div>
+            <div class="product_name flex justify-center">
+              <p class="text-base text-gray-400">Red Dragon</p>
+            </div>
+            <div class="reating flex justify-center py-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>                
+            </div>
+            <div class="flex justify-center pb-10">
+              <p class="text-lg font-extrabold text-color_primery">Details</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="w-full bg-white border border-slate-200 rounded-xl duration-500 hover:scale-105 hover:shadow-xl my-4">
+          <a href="#">
+            <img src="assets/img/fruit6.png" alt="Product" class="w-2/5 mx-auto py-6" />
+            <div class="flex items-center justify-center ">
+              <p class="text-2xl text-black font-extrabold cursor-auto my-3">$149 - </p>
+              <del>
+                <p class="text-2xl text-gray-600 cursor-auto ml-2">$199</p>
+              </del>
+            </div>
+            <div class="divider w-4/5 mx-auto"></div>
+            <div class="product_name flex justify-center">
+              <p class="text-base text-gray-400">Banana</p>
+            </div>
+            <div class="reating flex justify-center py-6">
+              <svg xmlns="http://www.w3.org/2000/svg" width="160" height="24" viewBox="0 0 160 24" fill="none">
+                <path d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z" fill="#F85559"/>
+                <path d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z" fill="#FBC0A8"/>
+                <path d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z" fill="#F85559"/>
+                <path d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z" fill="#FBC0A8"/>
+                <path d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z" fill="#FBC0A8"/>
+                <path d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z" fill="#FBC0A8"/>
+                </svg>                
+            </div>
+            <div class="flex justify-center pb-10">
+              <p class="text-lg font-extrabold text-color_primery">Details</p>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="portfolio bg-[url('/assets/img/team.png')] bg-cover bg-no-repeat	bg-center py-14 my-36 ">
+        <div class="container mx-auto">
+          <div class="portfolio_title flex justify-center flex-col items-center text-white">
+            <h2 class="text-5xl py-4 font-extrabold">Meet the team section</h2>
+            <p class="lg:w-5/12 sm:w-full text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+
+          <div class="inner_box flex flex-wrap gap-6 justify-between pt-16 w-9/12 mx-auto md:flex-row sm:flex-col flex-col">
+            <div class="box text-white flex justify-center flex-col">
+              <img class="w-40 mx-auto" src="assets/img/member1.png" alt="">
+              <h3 class="text-2xl pt-5 text-center">Awlad Hossain</h3>
+              <h4 class="pb-4 text-center">Fruits Expert</h4>
+              <ul class="icon flex gap-4 justify-center">
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+            <div class="box text-white flex justify-center flex-col">
+              <img class="w-40 mx-auto" src="assets/img/member2.png" alt="">
+              <h3 class="text-2xl pt-5 text-center">Awlad Hossain</h3>
+              <h4 class="pb-4 text-center">Fruits Expert</h4>
+              <ul class="icon flex gap-4 justify-center">
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+            <div class="box text-white flex justify-center flex-col">
+              <img class="w-40 mx-auto" src="assets/img/member3.png" alt="">
+              <h3 class="text-2xl pt-5 text-center">Awlad Hossain</h3>
+              <h4 class="pb-4 text-center">Fruits Expert</h4>
+              <ul class="icon flex gap-4 justify-center">
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+            <div class="box text-white flex justify-center flex-col">
+              <img class="w-40 mx-auto" src="assets/img/member4.png" alt="">
+              <h3 class="text-2xl pt-5 text-center">Awlad Hossain</h3>
+              <h4 class="pb-4 text-center">Fruits Expert</h4>
+              <ul class="icon flex gap-4 justify-center">
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-facebook text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-twitter text-white"></i></a></li>
+                <li><a class="bg-color_primery rounded-full h-8 w-8 block leading-loose text-center" href="#"><i class="fa-brands fa-linkedin text-white"></i></a></li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <!-- why chose -->
+      <section class="why_chose mb-36">
+        <div class="container mx-auto">
+          <div class="flex justify-center flex-col items-center">
+            <h2 class="text-5xl py-4 font-extrabold">Why Choose Us</h2>
+            <p class="lg:w-5/12 sm:w-full text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+          </div>
+
+          <div class="chose_inner flex justify-center pt-16 lg:flex-row sm:flex-col flex-col">
+            <div class="inner_box lg:w-1/4 sm:w-full">
+              <div class="icon_box flex gap-4 justify-center mb-10">
+                <div class=""><i class="fa-regular fa-lemon text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">Integrated Supplier</h3>
+                  <div class="divider w-2/4 text-black"></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="icon_box flex gap-4 justify-center mb-12">
+                <div class=""><i class="fa-solid fa-ice-cream text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">Sustainable Practice</h3>
+                  <div class="divider w-2/4 text-black"></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="icon_box flex gap-4 justify-center">
+                <div class=""><i class="fa-regular fa-thumbs-up text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">The Benefits Only</h3>
+                  <div class="divider w-2/4 text-black"></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+            <div class="inner_box lg:w-2/4 sm:w-full lg:p-0 sm:py-10 flex justify-center flex-col items-center">
+              <img src="assets/img/whychoose1.png" alt="">
+            </div>
+            <div class="inner_box lg:w-1/4 sm:w-full">
+              <div class="icon_box flex gap-4 justify-center flex-row-reverse text-end mb-10">
+                <div class=""><i class="fa-solid fa-users text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">Dedicated Team</h3>
+                  <div class="flex justify-end"><div class="divider w-2/4"></div></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="icon_box flex gap-4 justify-center flex-row-reverse text-end mb-10">
+                <div class=""><i class="fa-regular fa-heart text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">Fresh is Best</h3>
+                  <div class="flex justify-end"><div class="divider w-2/4"></div></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+              <div class="icon_box flex gap-4 justify-center flex-row-reverse text-end">
+                <div class=""><i class="fa-solid fa-gift text-xl w-20 h-20 bg-slate-50 rounded-full block text-center pt-6"></i></div>
+                <div class="content">
+                  <h3 class="text-2xl font-extrabold">Gift Certificates</h3>
+                  <div class="flex justify-end"><div class="divider w-2/4"></div></div> 
+                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="py-28 bg-black">
+        <div class="container mx-auto flex items-center flex-col">
+          <img src="assets/img/logo white.png" alt="">
+          <div class="navbar text-white flex items-center flex-col">
+            <div class="navbar-center">
+              <ul class="menu menu-horizontal">
+                <li><a class="hover:text-color_primery">Home</a></li>
+                <li><a class="hover:text-color_primery">About Us</a></li>
+                <li><a class="hover:text-color_primery">Shop</a></li>
+                <li><a class="hover:text-color_primery">All Fruits</a></li>
+                <li><a class="hover:text-color_primery">Support</a></li>
+                <li><a class="hover:text-color_primery">My Account</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar flex items-center flex-col">
+            <div class="navbar-center">
+              <ul class="menu menu-horizontal text-white text-4xl ">
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-youtube"></i></a></li>
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a class="hover:text-color_primery"><i class="fa-brands fa-apple"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </main>
+</body>
+</html>
